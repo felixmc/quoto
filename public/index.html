@@ -1,6 +1,6 @@
 <!-- index.html -->
 	<!DOCTYPE html>
-	<html>
+	<html ng-app="scotchApp">
 	<head>
 	  <!-- SCROLLS -->
 	  <!-- load bootstrap and fontawesome via CDN -->
@@ -11,18 +11,17 @@
 	  <!-- load jquery, bootstrap, and angular via CDN -->
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	  <script src="http://code.angularjs.org/1.2.0rc1/angular.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
 	  <script src="static/script.js"></script>
 	</head>
-	<body>
+	<body ng-controller="mainController">
 
 		<!-- HEADER AND NAVBAR -->
 		<header>
 			<nav class="navbar navbar-default">
 			<div class="container">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="/">Angular Routing Example</a>
-				</div>
 
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#"><i class="fa fa-home"></i> Home</a></li>
@@ -36,6 +35,11 @@
 		<!-- MAIN CONTENT AND INJECTED VIEWS -->
 		<div id="main">
 
+{{ message }}
+	 	<div ng-view>
+{{ message }}
+			
+		 </div> 
 			<!-- angular templating -->
 			<!-- this is where content will be injected -->
 
