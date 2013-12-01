@@ -1,0 +1,11 @@
+{
+	"name": "Quoto",
+	"version": "0.1.0",
+	"description": "Simple web app for storing and organizing quotes.",
+	"dependencies": {
+		"express": "3.4.5",
+		"custom-logger": "0.2.1"
+	}
+
+
+}
