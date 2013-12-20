@@ -31,7 +31,7 @@ app.post('/api/quotes', function(req, res) {
 		res.send(406);
 	else {
 		var query = "INSERT INTO `quotes`(`content`, `author`, `source`, `date_created`) VALUES (" + mysql.escape(data.content) + "," + mysql.escape(data.author) + "," + mysql.escape(data.source) + ",NOW())";
-		dbQuery(query, res, 200);
+		dbQuery(query, res);
 	}
 });
 
