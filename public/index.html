@@ -4,8 +4,9 @@
 	<head>
 	  <!-- SCROLLS -->
 	  <!-- load bootstrap and fontawesome via CDN -->
-	  <link rel="stylesheet" href="jttp://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
 	  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+	  <link rel="stylesheet" href="static/style.css" />
 
 	  <!-- SPELLS -->
 	  <!-- load jquery, bootstrap, and angular via CDN -->
@@ -32,16 +33,11 @@
 			</nav>
 		</header>
 
-		<!-- MAIN CONTENT AND INJECTED VIEWS -->
 		<div id="main">
-
-{{ message }}
 	 	<div ng-view>
 {{ message }}
 			
 		 </div> 
-			<!-- angular templating -->
-			<!-- this is where content will be injected -->
 
 		</div>
 
