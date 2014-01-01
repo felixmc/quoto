@@ -27,7 +27,19 @@
 
 	quotoApp.controller('searchController', function($scope) {
 		$scope.message = 'Search for...';
+		var mysql = require('mysql'),
+			client = mysql.createClient({
+				user:'quoto',
+				password:'password1'
+			});
+
+			mysql.query('SELECT * from quotes', function (err, results, fields){
+				console.log(results);
+				client.end();
+			});
 	});
+
+
 
 
 
