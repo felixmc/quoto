@@ -1,5 +1,10 @@
 html{background-color: #79BD8F;}
 
+body { padding-top: 50px; padding-bottom: 0px; }
+
 .navbar-default {background-color: #BEE9BF; border-color: #79BD8F; margin:0;}
 
 .jumbotron{background-color: #FFFF9D;}
+
+#footer{background-color: #79BD8F;}
+
